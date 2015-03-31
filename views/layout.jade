@@ -9,18 +9,20 @@ html
     link(href='/css/prettyPhoto.css', rel='stylesheet')
     link(href='/css/main.css', rel='stylesheet')
     link(href='/css/font-awesome.min.css', rel='stylesheet')
-    link(href='/css/font-awesome.css', rel='stylesheet')
     link(href='/css/style.css', rel='stylesheet')
     link(rel="icon",href="../../../../favicon.ico")
     
     //- STYLE FOR OPENING IMAGE IN POPUP USING FANCYBOX
     link(href='/js/source/jquery.fancybox.css', rel='stylesheet')
-
     meta(chareset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     meta(name="description", content="")
     meta(name="author", content="")
+    //- STYLE FOR CONTACT
+    link(rel="stylesheet" ,href="css/fancy-buttons.css")
+    link(rel="stylesheet" ,href="css/animate.css")
+    link(rel="stylesheet" ,href="css/style-contact.css")
 
   body 
     block content
@@ -223,36 +225,32 @@ html
       
       //- // TEAM SECTION END
       section#contact
-        .overlay
-          .container
-            .row.text-center(data-scroll-reveal='enter from the bottom after 0.2s')
-              .col-md-6.col-md-offset-3.pad-bottom
-                h2
-                  strong STAY CONNECTED 
-                |                         Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
-            .row.text-center(data-scroll-reveal='enter from the bottom after 0.4s')
-              .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
-                h3
+        .overlay(style="padding-top:60px;") 
+          .container.contact.center.animated(data-animation='flipInY', data-animation-delay='1000')
+            .col-md-4
+              h3#h4
                   strong Address : 
-                br
-                h4 Triq Asour, Tripoli,
-                h4 Libya 
-                h4
-                  br
-                  br
-                  br
-                  br
-                  br
-                  br
-                  br
-                  br
-                  br
-                  br
-                  br
-                  br
-                  br
+                h4#h4 Triq Asour, Tripoli,Libya
+                h4#h4
+                  strong Phone Number : 
+                  | 092*******
+                h4#h4
                   strong Email : 
                   | info@naga.com
+            .col-md-8
+              .col-md-10.col-md-offset-1.center.section-title
+                h2 Leave a message
+              .confirmation
+                p
+                  span.fa.fa-check
+              form.contact-form.support-form
+                .col-lg-12
+                  input#name.input-field.form-item.field-name(type='text', required='required', name='contact-name', placeholder='Name')
+                  input#email.input-field.form-item.field-email(type='email', required='required', name='contact-email', placeholder='Email')
+                  input#subject.input-field.form-item.field-subject(type='text', required='required', name='contact-subject', placeholder='Subject')
+                  textarea#message.textarea-field.form-item.field-message(rows='10', name='contact-message', placeholder='Message')
+                button.fancy-button.button-line.button-white.large.zoom.subform(type='submit')
+                  | Send message    
       //- // CONTACT SECTION END
       
       //- // about-slider
@@ -448,3 +446,8 @@ html
   script(src='/js/main.js')
   script(src='/js/respond.min.js')
   script(src='/js/wow.min.js')
+  //- // SCRIPTS  CONTACT STARTED
+  script(src='/js/jquery.vegas.min.js')
+  script(src='/js/jquery.appear.js')
+  script(src='/js/custom-contact.js')
+  //- // SCRIPTS  CONTACT ENDED

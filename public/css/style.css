@@ -59,6 +59,7 @@ section {
 NAVBAR STYLES
 ==============================*/
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+
     color: #fff;
     font-size: 45px;
     text-transform: uppercase;
@@ -71,6 +72,7 @@ padding:0px;
         height:50px;
     }
 .navbar-default .navbar-toggle {
+
     border-color: #FFF;
 }
 
@@ -93,6 +95,7 @@ padding:0px;
     }
 
 .navbar-default {
+
     /*background: rgb(54, 25, 25);*/
     background-color: transparent;
     /*background-color: #A31919;*/
@@ -100,6 +103,7 @@ padding:0px;
 }
 /* ADDED PADDING IN NAVBAR */
 .navbar {
+    /* background: rgba(0,0,0, .6); aladdin */
     padding: 11px;
     -webkit-transition: background .8s ease-out,padding .8s ease-out;
     -moz-transition: background red .8s ease-out,padding .8s ease-out;
@@ -107,6 +111,8 @@ padding:0px;
 }
 /* CLASS FOR REMOVING PADDING IN NAVBAR*/
 .navbar-pad-original {
+    /*background: rgba(0,0,0, .6); aladdin */
+    /* height: 60px; /*Aladdin*/
     padding: 0px;
     background-color: #A31919;
 
