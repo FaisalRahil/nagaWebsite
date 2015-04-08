@@ -1,0 +1,187 @@
+
+/* --------------- Common Classes --------------- */
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.strong {
+font-weight: 700;
+}
+
+.floatright {
+	float:right;
+}
+
+.floatleft {
+	float:left;
+}
+
+.floatnone {
+	float:none;
+}
+
+.fixed {
+	position:fixed;
+}
+
+.absolute {
+	position:absolute;
+}
+
+.relative {
+	position:relative;
+}
+
+.container {
+	position:relative;
+	z-index: 10;
+}
+
+.section-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.animated {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.section-title h2  {
+	color: #F4F4F4;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	display: inline-block;
+	margin-top: 0;
+	padding: 8px 0;
+	
+}
+
+.section-overlay {
+	background: rgba(0, 0, 0, .7) !important;
+	z-index: 5;
+}
+
+/* --------------- Button Styles --------------- */
+.button-line {
+	background: transparent;
+	display: inline-block;
+	font-weight: 400;
+	border-radius: 4px;
+	border: 1px solid;
+	margin: 10px;
+	overflow: visible;
+}
+
+.no-text .icon {
+	margin: 0;
+}
+
+.btn .icon {
+	margin-left: 13px;
+}
+
+.button-white {
+	border-color: #fff;
+	color: #fff;
+}
+
+.button-white:hover {
+	border-color: #fff;
+	color: #fff;
+}
+
+
+
+/* ================ Contact Section ================ */
+#section-contact {
+	position:relative;
+}
+
+.contact {
+	padding-top: 45px;
+	padding-bottom: 120px;
+}
+
+.contact h2 {
+	margin-bottom: 30px;
+}
+
+.confirmation {
+	display:none;
+	clear: both;
+	color: #e5e5e5;
+}
+
+.confirmation p span {
+	margin-right: 8px;
+}
+
+.contact-form {
+	color:#f9f9f9;
+}
+
+.contact-form .input-field {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	height: 50px;
+}
+
+.textarea-field, .input-field {
+	border: 1px solid #111;
+}
+
+.contact-form .form-item {
+	color:#ffffff;
+	width: 100%;
+	padding: 5px 15px;
+	border-color:#ffffff;
+	border-radius: 4px;
+	background: transparent;
+	box-shadow: none;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+.contact-form .form-item::-webkit-input-placeholder {
+	color: #FFFFFF;
+}
+
+.contact-form .form-item:-moz-placeholder {
+	color: #f9f9f9;
+}
+
+.contact-form .form-item::-moz-placeholder {
+	color: #f9f9f9;
+}
+
+.contact-form .form-item:-ms-input-placeholder {
+	color: #f9f9f9;
+}
+
+.contact-form .subform {
+	margin-top: 20px;
+}
+
+.contact-form .form-item:hover, .contact-form .form-item:focus {
+	border-color:#ccc;
+	box-shadow: none;
+}
+
+#h4 {
+	color: #ffffff;
+}
