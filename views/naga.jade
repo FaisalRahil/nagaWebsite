@@ -1,394 +1,386 @@
 extends layout
 block content
-      .navbar.navbar-default.navbar-fixed-top.scroll-me
-        //- // pass scroll-me class above a tags to starts scrolling
-        .container
-          .navbar-header
-            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a.navbar-brand(href='#')
-              img(src='/img/nagaLogo.png', alt='')
-          .navbar-collapse.collapse
-            ul.nav.navbar-nav.navbar-right
-              li
-                a(href='#header') HOME
-              li
-                a(href='#services') SERVICES
-              li
-                a(href='#clients') CLIENTS
-              li
-                a(href='#works') WORK
-              li
-                a(href='#contact') CONTACT
-              li
-                a(href='#aboutUs') ABOUT US
-              li
-                a(href='#team') TEAM
-      
-
-      #header
-        .overlay
-          .container
-            .row.scroll-me
-              .col-md-6.col-md-offset-3.col-sm-6.col-sm-offset-3.text-center
-                h1(data-scroll-reveal='enter from the bottom after 0.2s')
-                  | Naga software development company and create better systems and sites
-                //- h4(data-scroll-reveal='enter from the bottom after 0.4s')
-                //-   | Morbi bibendum risus non nunc feugiat, quis venenatis augue fringilla.
-                //-   | Morbi vestibulum elit eget leo congue elementum.
-                //-   | Aliquam at turpis urna. Nam pulvinar tincidunt posuere.
-                //- a.btn.set-bk-clr(data-scroll-reveal='enter from the bottom after 0.6s', href='#') Explore Awesomeness
-      //- // HEADER SECTION END
-      section#services
-        .container
-          .row.text-center
-            .col-md-6.col-md-offset-3.pad-bottom(data-scroll-reveal='enter from the bottom after 0.2s')
-              h2
-                strong OUR SERVICES
-              |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
-          .row.text-center.pad-bottom(data-scroll-reveal='enter from the bottom after 0.4s')
-            .col-md-3
-              i.ion-ios-cloud-outline
-              h4
-                strong Service Name # 1 
-              |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-            .col-md-3
-              i.ion-card
-              h4
-                strong Service Name # 2 
-              |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-            .col-md-3
-              i.ion-speedometer
-              h4
-                strong Service Name # 3 
-              |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-            .col-md-3
-              i.ion-ios-settings
-              h4
-                strong Service Name # 4 
-              |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-          .row.text-center(data-scroll-reveal='enter from the bottom after 0.6s')
-            .col-md-3
-              i.ion-ios-chatboxes-outline
-              h4
-                strong Service Name # 5 
-              |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-            .col-md-3
-              i.ion-ios-pulse-strong
-              h4
-                strong Service Name # 6 
-              |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-            .col-md-3
-              i.ion-ios-browsers-outline
-              h4
-                strong Service Name # 7 
-              |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-            .col-md-3
-              i.ion-ios-people-outline
-              h4
-                strong Service Name # 8 
-              |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-      //- // SERVICES SECTION END
-      #clients
-        .overlay
-          .container
-            .row.text-center
-              .col-md-12(data-scroll-reveal='enter from the bottom after 0.2s')
-                #clients-slider.carousel.slide.clients-carousel
-                  .carousel-inner
-                    .item.active
-                      .row
-                        .col-md-3
-                          a.thumbnail(href='#')
-                            img(src='/img/facebook.png', alt='')
-                        .col-md-3
-                          a.thumbnail(href='#')
-                            img(src='/img/facebook.png', alt='')
-                        .col-md-3
-                          a.thumbnail(href='#')
-                            img(src='/img/google.png', alt='')
-                        .col-md-3
-                          a.thumbnail(href='#')
-                            img(src='/img/graphic.png', alt='')
-                    .item
-                      .row
-                        .col-md-3
-                          a.thumbnail(href='#')
-                            img(src='/img/facebook.png', alt='')
-                        .col-md-3
-                          a.thumbnail(href='#')
-                            img(src='/img/facebook.png', alt='')
-                        .col-md-3
-                          a.thumbnail(href='#')
-                            img(src='/img/google.png', alt='')
-                        .col-md-3
-                          a.thumbnail(href='#')
-                            img(src='/img/graphic.png', alt='')
-                    .item
-                      .row
-                        .col-md-3
-                          a.thumbnail(href='#')
-                            img(src='/img/facebook.png', alt='')
-                        .col-md-3
-                          a.thumbnail(href='#')
-                            img(src='/img/facebook.png', alt='')
-                        .col-md-3
-                          a.thumbnail(href='#')
-                            img(src='/img/google.png', alt='')
-                        .col-md-3
-                          a.thumbnail(href='#')
-                            img(src='/img/graphic.png', alt='')
-                        
-                  a.left.carousel-control(data-slide='prev', href='#clients-slider') ‹
-                  a.right.carousel-control(data-slide='next', href='#clients-slider') ›
-      //- // CLIENTS SECTION END
-      section#works
-        .container
-          .row.text-center
-            .col-md-6.col-md-offset-3.pad-bottom(data-scroll-reveal='enter from the bottom after 0.2s')
-              h2
-                strong WORK PORFOLIO
-              |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
-          .row.text-center
-            .col-md-12.pad-bottom(data-scroll-reveal='enter from the bottom after 0.4s')
-              .caegories
-                a.active.btn.btn-sm(href='#', data-filter='*') All
-                a.btn.btn-sm(href='#', data-filter='.html') HTML
-                a.btn.btn-sm(href='#', data-filter='.css') CSS
-                a.btn.btn-sm(href='#', data-filter='.code') CODE
-                a.btn.btn-sm(href='#', data-filter='.script') SCRIPT
-          #portfolio-div.row.text-center
-            .col-md-4.col-sm-4.html
-              .work-wrapper
-                a.fancybox-media(title='Image Title Goes Here', href='assets/img/portfolio/1.jpg')
-                  img.img-responsive(src='/img/portfolio/1.jpg', alt='')
-            .col-md-4.col-sm-4.css
-              .work-wrapper
-                a.fancybox-media(title='Image Title Goes Here', href='assets/img/portfolio/2.jpg')
-                  img.img-responsive(src='/img/portfolio/2.jpg', alt='')
-            .col-md-4.col-sm-4.code
-              .work-wrapper
-                a.fancybox-media(title='Image Title Goes Here', href='assets/img/portfolio/3.jpg')
-                  img.img-responsive(src='/img/portfolio/3.jpg', alt='')
-            .col-md-4.col-sm-4.script
-              .work-wrapper
-                a.fancybox-media(title='Image Title Goes Here', href='assets/img/portfolio/4.jpg')
-                  img.img-responsive(src='/img/portfolio/4.jpg', alt='')
-            .col-md-4.col-sm-4.html.script
-              .work-wrapper
-                a.fancybox-media(title='Image Title Goes Here', href='assets/img/portfolio/5.jpg')
-                  img.img-responsive(src='/img/portfolio/5.jpg', alt='')
-            .col-md-4.col-sm-4.css.code
-              .work-wrapper
-                a.fancybox-media(title='Image Title Goes Here', href='assets/img/portfolio/6.jpg')
-                  img.img-responsive(src='/img/portfolio/6.jpg', alt='')
-      
-      #testimonial(data-scroll-reveal='enter from the bottom after 0.2s')
-        .overlay
-          .container
-            .row.text-center
-              .col-md-4.col-md-offset-4.col-sm-4.col-sm-offset-4
-                i.ion-ios-drag.clr-set.f-big
-                br
-                p
-                  | Consectetur adipiscing elit felis dolor felis dolor vitae.
-                  | Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-      //- // TESTIMONIAL SECTION END
-      
-      //- // TEAM SECTION END
-      section#contact
-        .overlay
-          .container
-            .row.text-center(data-scroll-reveal='enter from the bottom after 0.2s')
-              .col-md-6.col-md-offset-3.pad-bottom
-                h2
-                  strong STAY CONNECTED 
-                |                         Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
-            .row.text-center(data-scroll-reveal='enter from the bottom after 0.4s')
-              .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
-                h3
-                  strong Address : 
-                br
-                h4 Triq Asour, Tripoli,
-                h4 Libya 
-                h4
-                  strong Email : 
-                  | info@naga.com
-      //- // CONTACT SECTION END
-      
-      //- // about-slider
-      #aboutUs
-        section#about-us
-          .container
-            .center.wow.fadeInDown
-              h2 About Corlate
-              p.lead
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-                br
-                |  et dolore magna aliqua. Ut enim ad minim veniam
-            //- // about us slider
-            #about-slider
-              #carousel-slider.carousel.slide(data-ride='carousel')
-                //- // Indicators
-                ol.carousel-indicators.visible-xs
-                  li.active(data-target='#carousel-slider', data-slide-to='0')
-                  li(data-target='#carousel-slider', data-slide-to='1')
-                  li(data-target='#carousel-slider', data-slide-to='2')
-                .carousel-inner
-                  .item.active
-                    img.img-responsive(src='/img/slider_one.jpg', alt='')
-                  .item
-                    img.img-responsive(src='/img/slider_one.jpg', alt='')
-                  .item
-                    img.img-responsive(src='/img/slider_one.jpg', alt='')
-                a.left.carousel-control.hidden-xs(href='#carousel-slider', data-slide='prev')
-                  i.fa.fa-angle-left
-                a.right.carousel-control.hidden-xs(href='#carousel-slider', data-slide='next')
-                  i.fa.fa-angle-right
-              //- // /#carousel-slider
-            //- // /#about-slider
-            //- // Our Skill
-            .skill-wrap.clearfix
-              .center.wow.fadeInDown
-                h2 Our Skill
-                p.lead
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-                  br
-                  |  et dolore magna aliqua. Ut enim ad minim veniam
-              .row
-                .col-sm-3
-                  .sinlge-skill.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
-                    .joomla-skill
-                      p
-                        em 85%
-                      p Joomla
-                .col-sm-3
-                  .sinlge-skill.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='600ms')
-                    .html-skill
-                      p
-                        em 95%
-                      p HTML
-                .col-sm-3
-                  .sinlge-skill.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='900ms')
-                    .css-skill
-                      p
-                        em 80%
-                      p CSS
-                .col-sm-3
-                  .sinlge-skill.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='1200ms')
-                    .wp-skill
-                      p
-                        em 90%
-                      p Wordpress
-            //- // /.our-skill
-            //- // our-team
-            .team
-              .center.wow.fadeInDown
-                h2 Team of Corlate
-                p.lead
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-                  br
-                  |  et dolore magna aliqua. Ut enim ad minim veniam
-              //- // /.row
-              .row.team-bar
-                .first-one-arrow.hidden-xs
-                  hr
-                .first-arrow.hidden-xs
-                  hr
-                  i.fa.fa-angle-up
-                .second-arrow.hidden-xs
-                  hr
-                  i.fa.fa-angle-down
-                .third-arrow.hidden-xs
-                  hr
-                  i.fa.fa-angle-up
-                .fourth-arrow.hidden-xs
-                  hr
-                  i.fa.fa-angle-down
-              //- // skill_border
-        //- // /about-us              
-      //- // WORK SECTION END
-      
-      section#team
-        .container
-          .row.text-center(data-scroll-reveal='enter from the bottom after 0.2s')
-            .col-md-6.col-md-offset-3.pad-bottom
-              h2
-                strong AWESOME TEAM
-              |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
-          .row.pad-bottom(data-scroll-reveal='enter from the bottom after 0.4s')
-            .col-md-6.col-sm-6
-              .media
-                a.media-left(href='#')
-                  img.img-circle(src='/img/11.jpg', alt='')
-                .media-body
-                  h3.media-heading Technical Director
-                  |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                  |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-            .col-md-6.col-sm-6
-              .media
-                a.media-left(href='#')
-                  img.img-circle(src='/img/12.jpg', alt='')
-                .media-body
-                  h3.media-heading Marketing Director
-                  |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                  |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-          .row.pad-bottom(data-scroll-reveal='enter from the bottom after 0.6s')
-            .col-md-6.col-sm-6
-              .media
-                a.media-left(href='#')
-                  img.img-circle(src='/img/13.jpg', alt='')
-                .media-body
-                  h3.media-heading Clients Manager
-                  |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                  |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-            .col-md-6.col-sm-6
-              .media
-                a.media-left(href='#')
-                  img.img-circle(src='/img/14.jpg', alt='')
-                .media-body
-                  h3.media-heading Support Director
-                  |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                  |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-          .row.pad-bottom(data-scroll-reveal='enter from the bottom after 0.6s')
-            .col-md-6.col-sm-6
-              .media
-                a.media-left(href='#')
-                  img.img-circle(src='/img/17.jpg', alt='')
-                .media-body
-                  h3.media-heading Clients Manager
-                  |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                  |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-            .col-md-6.col-sm-6
-              .media
-                a.media-left(href='#')
-                  img.img-circle(src='/img/18.jpg', alt='')
-                .media-body
-                  h3.media-heading Support Director
-                  |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                  |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-          .row.pad-bottom(data-scroll-reveal='enter from the bottom after 0.6s')
-            .col-md-6.col-sm-6
-              .media
-                a.media-left(href='#')
-                  img.img-circle(src='/img/19.jpg', alt='')
-                .media-body
-                  h3.media-heading Clients Manager
-                  |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                  |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-            .col-md-6.col-sm-6
-              .media
-                a.media-left(href='#')
-                  img.img-circle(src='/img/20.jpg', alt='')
-                .media-body
-                  h3.media-heading Support Director
-                  |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                  |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-      footer
+  .navbar.navbar-default.navbar-fixed-top.scroll-me
+    //- // pass scroll-me class above a tags to starts scrolling
+    .container
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='#')
+          img(src='/img/nagaLogo.png', alt='')
+      .navbar-collapse.collapse
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='#header') HOME
+          li
+            a(href='#services') SERVICES
+          li
+            a(href='#clients') CLIENTS
+          li
+            a(href='#works') WORK
+          li
+            a(href='#contact') CONTACT
+          li
+            a(href='#aboutUs') ABOUT US
+          li
+            a(href='#team') TEAM
+  
+  #header
+    .overlay
+      .container
+        .row.scroll-me
+          .col-md-6.col-md-offset-3.col-sm-6.col-sm-offset-3.text-center
+            h1(data-scroll-reveal='enter from the bottom after 0.2s')
+              | Naga software development company and create better systems and sites
+            //- h4(data-scroll-reveal='enter from the bottom after 0.4s')
+            //-   | Morbi bibendum risus non nunc feugiat, quis venenatis augue fringilla.
+            //-   | Morbi vestibulum elit eget leo congue elementum.
+            //-   | Aliquam at turpis urna. Nam pulvinar tincidunt posuere.
+            //- a.btn.set-bk-clr(data-scroll-reveal='enter from the bottom after 0.6s', href='#') Explore Awesomeness
+  //- // HEADER SECTION END
+  section#services
+    .container
+      .row.text-center
+        .col-md-6.col-md-offset-3.pad-bottom(data-scroll-reveal='enter from the bottom after 0.2s')
+          h2
+            strong OUR SERVICES
+          |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
+      .row.text-center.pad-bottom(data-scroll-reveal='enter from the bottom after 0.4s')
+        .col-md-3
+          i.ion-ios-cloud-outline
+          h4
+            strong Service Name # 1 
+          |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+        .col-md-3
+          i.ion-card
+          h4
+            strong Service Name # 2 
+          |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+        .col-md-3
+          i.ion-speedometer
+          h4
+            strong Service Name # 3 
+          |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+        .col-md-3
+          i.ion-ios-settings
+          h4
+            strong Service Name # 4 
+          |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+      .row.text-center(data-scroll-reveal='enter from the bottom after 0.6s')
+        .col-md-3
+          i.ion-ios-chatboxes-outline
+          h4
+            strong Service Name # 5 
+          |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+        .col-md-3
+          i.ion-ios-pulse-strong
+          h4
+            strong Service Name # 6 
+          |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+        .col-md-3
+          i.ion-ios-browsers-outline
+          h4
+            strong Service Name # 7 
+          |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+        .col-md-3
+          i.ion-ios-people-outline
+          h4
+            strong Service Name # 8 
+          |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+  //- // SERVICES SECTION END
+  #clients
+    .overlay
+      .container
+        .row.text-center
+          .col-md-12(data-scroll-reveal='enter from the bottom after 0.2s')
+            #clients-slider.carousel.slide.clients-carousel
+              .carousel-inner
+                .item.active
+                  .row
+                    .col-md-3
+                      a.thumbnail(href='#')
+                        img(src='/img/facebook.png', alt='')
+                    .col-md-3
+                      a.thumbnail(href='#')
+                        img(src='/img/facebook.png', alt='')
+                    .col-md-3
+                      a.thumbnail(href='#')
+                        img(src='/img/google.png', alt='')
+                    .col-md-3
+                      a.thumbnail(href='#')
+                        img(src='/img/graphic.png', alt='')
+                .item
+                  .row
+                    .col-md-3
+                      a.thumbnail(href='#')
+                        img(src='/img/facebook.png', alt='')
+                    .col-md-3
+                      a.thumbnail(href='#')
+                        img(src='/img/facebook.png', alt='')
+                    .col-md-3
+                      a.thumbnail(href='#')
+                        img(src='/img/google.png', alt='')
+                    .col-md-3
+                      a.thumbnail(href='#')
+                        img(src='/img/graphic.png', alt='')
+                .item
+                  .row
+                    .col-md-3
+                      a.thumbnail(href='#')
+                        img(src='/img/facebook.png', alt='')
+                    .col-md-3
+                      a.thumbnail(href='#')
+                        img(src='/img/facebook.png', alt='')
+                    .col-md-3
+                      a.thumbnail(href='#')
+                        img(src='/img/google.png', alt='')
+                    .col-md-3
+                      a.thumbnail(href='#')
+                        img(src='/img/graphic.png', alt='')
+                    
+              a.left.carousel-control(data-slide='prev', href='#clients-slider') ‹
+              a.right.carousel-control(data-slide='next', href='#clients-slider') ›
+  //- // CLIENTS SECTION END
+  section#works
+    .container
+      .row.text-center
+        .col-md-6.col-md-offset-3.pad-bottom(data-scroll-reveal='enter from the bottom after 0.2s')
+          h2
+            strong WORK PORFOLIO
+          |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
+      .row.text-center
+        .col-md-12.pad-bottom(data-scroll-reveal='enter from the bottom after 0.4s')
+          .caegories
+            a.active.btn.btn-sm(href='#', data-filter='*') All
+            a.btn.btn-sm(href='#', data-filter='.html') HTML
+            a.btn.btn-sm(href='#', data-filter='.css') CSS
+            a.btn.btn-sm(href='#', data-filter='.code') CODE
+            a.btn.btn-sm(href='#', data-filter='.script') SCRIPT
+      #portfolio-div.row.text-center
+        .col-md-4.col-sm-4.html
+          .work-wrapper
+            a.fancybox-media(title='Image Title Goes Here', href='assets/img/portfolio/1.jpg')
+              img.img-responsive(src='/img/portfolio/1.jpg', alt='')
+        .col-md-4.col-sm-4.css
+          .work-wrapper
+            a.fancybox-media(title='Image Title Goes Here', href='assets/img/portfolio/2.jpg')
+              img.img-responsive(src='/img/portfolio/2.jpg', alt='')
+        .col-md-4.col-sm-4.code
+          .work-wrapper
+            a.fancybox-media(title='Image Title Goes Here', href='assets/img/portfolio/3.jpg')
+              img.img-responsive(src='/img/portfolio/3.jpg', alt='')
+        .col-md-4.col-sm-4.script
+          .work-wrapper
+            a.fancybox-media(title='Image Title Goes Here', href='assets/img/portfolio/4.jpg')
+              img.img-responsive(src='/img/portfolio/4.jpg', alt='')
+        .col-md-4.col-sm-4.html.script
+          .work-wrapper
+            a.fancybox-media(title='Image Title Goes Here', href='assets/img/portfolio/5.jpg')
+              img.img-responsive(src='/img/portfolio/5.jpg', alt='')
+        .col-md-4.col-sm-4.css.code
+          .work-wrapper
+            a.fancybox-media(title='Image Title Goes Here', href='assets/img/portfolio/6.jpg')
+              img.img-responsive(src='/img/portfolio/6.jpg', alt='')
+  #testimonial(data-scroll-reveal='enter from the bottom after 0.2s')
+    .overlay
+      .container
+        .row.text-center
+          .col-md-4.col-md-offset-4.col-sm-4.col-sm-offset-4
+            i.ion-ios-drag.clr-set.f-big
+            br
+            p
+              | Consectetur adipiscing elit felis dolor felis dolor vitae.
+              | Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+  //- // TESTIMONIAL SECTION END
+  //- // TEAM SECTION END
+  section#contact
+    .overlay
+      .container
+        .row.text-center(data-scroll-reveal='enter from the bottom after 0.2s')
+          .col-md-6.col-md-offset-3.pad-bottom
+            h2
+              strong STAY CONNECTED 
+            |                         Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
+        .row.text-center(data-scroll-reveal='enter from the bottom after 0.4s')
+          .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
+            h3
+              strong Address : 
+            br
+            h4 Triq Asour, Tripoli,
+            h4 Libya 
+            h4
+              strong Email : 
+              | info@naga.com
+  //- // CONTACT SECTION END
+  //- // about-slider
+  #aboutUs
+    section#about-us
+      .container
+        .center.wow.fadeInDown
+          h2 About Corlate
+          p.lead
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+            br
+            |  et dolore magna aliqua. Ut enim ad minim veniam
+        //- // about us slider
+        #about-slider
+          #carousel-slider.carousel.slide(data-ride='carousel')
+            //- // Indicators
+            ol.carousel-indicators.visible-xs
+              li.active(data-target='#carousel-slider', data-slide-to='0')
+              li(data-target='#carousel-slider', data-slide-to='1')
+              li(data-target='#carousel-slider', data-slide-to='2')
+            .carousel-inner
+              .item.active
+                img.img-responsive(src='/img/slider_one.jpg', alt='')
+              .item
+                img.img-responsive(src='/img/slider_one.jpg', alt='')
+              .item
+                img.img-responsive(src='/img/slider_one.jpg', alt='')
+            a.left.carousel-control.hidden-xs(href='#carousel-slider', data-slide='prev')
+              i.fa.fa-angle-left
+            a.right.carousel-control.hidden-xs(href='#carousel-slider', data-slide='next')
+              i.fa.fa-angle-right
+          //- // /#carousel-slider
+        //- // /#about-slider
+        //- // Our Skill
+        .skill-wrap.clearfix
+          .center.wow.fadeInDown
+            h2 Our Skill
+            p.lead
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+              br
+              |  et dolore magna aliqua. Ut enim ad minim veniam
+          .row
+            .col-sm-3
+              .sinlge-skill.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+                .joomla-skill
+                  p
+                    em 85%
+                  p Joomla
+            .col-sm-3
+              .sinlge-skill.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='600ms')
+                .html-skill
+                  p
+                    em 95%
+                  p HTML
+            .col-sm-3
+              .sinlge-skill.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='900ms')
+                .css-skill
+                  p
+                    em 80%
+                  p CSS
+            .col-sm-3
+              .sinlge-skill.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='1200ms')
+                .wp-skill
+                  p
+                    em 90%
+                  p Wordpress
+        //- // /.our-skill
+        //- // our-team
+        .team
+          .center.wow.fadeInDown
+            h2 Team of Corlate
+            p.lead
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+              br
+              |  et dolore magna aliqua. Ut enim ad minim veniam
+          //- // /.row
+          .row.team-bar
+            .first-one-arrow.hidden-xs
+              hr
+            .first-arrow.hidden-xs
+              hr
+              i.fa.fa-angle-up
+            .second-arrow.hidden-xs
+              hr
+              i.fa.fa-angle-down
+            .third-arrow.hidden-xs
+              hr
+              i.fa.fa-angle-up
+            .fourth-arrow.hidden-xs
+              hr
+              i.fa.fa-angle-down
+          //- // skill_border
+    //- // /about-us              
+  //- // WORK SECTION END 
+  section#team
+    .container
+      .row.text-center(data-scroll-reveal='enter from the bottom after 0.2s')
+        .col-md-6.col-md-offset-3.pad-bottom
+          h2
+            strong AWESOME TEAM
+          |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
+      .row.pad-bottom(data-scroll-reveal='enter from the bottom after 0.4s')
+        .col-md-6.col-sm-6
+          .media
+            a.media-left(href='#')
+              img.img-circle(src='/img/11.jpg', alt='')
+            .media-body
+              h3.media-heading Technical Director
+              |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        .col-md-6.col-sm-6
+          .media
+            a.media-left(href='#')
+              img.img-circle(src='/img/12.jpg', alt='')
+            .media-body
+              h3.media-heading Marketing Director
+              |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+      .row.pad-bottom(data-scroll-reveal='enter from the bottom after 0.6s')
+        .col-md-6.col-sm-6
+          .media
+            a.media-left(href='#')
+              img.img-circle(src='/img/13.jpg', alt='')
+            .media-body
+              h3.media-heading Clients Manager
+              |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        .col-md-6.col-sm-6
+          .media
+            a.media-left(href='#')
+              img.img-circle(src='/img/14.jpg', alt='')
+            .media-body
+              h3.media-heading Support Director
+              |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+      .row.pad-bottom(data-scroll-reveal='enter from the bottom after 0.6s')
+        .col-md-6.col-sm-6
+          .media
+            a.media-left(href='#')
+              img.img-circle(src='/img/17.jpg', alt='')
+            .media-body
+              h3.media-heading Clients Manager
+              |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        .col-md-6.col-sm-6
+          .media
+            a.media-left(href='#')
+              img.img-circle(src='/img/18.jpg', alt='')
+            .media-body
+              h3.media-heading Support Director
+              |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+      .row.pad-bottom(data-scroll-reveal='enter from the bottom after 0.6s')
+        .col-md-6.col-sm-6
+          .media
+            a.media-left(href='#')
+              img.img-circle(src='/img/19.jpg', alt='')
+            .media-body
+              h3.media-heading Clients Manager
+              |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        .col-md-6.col-sm-6
+          .media
+            a.media-left(href='#')
+              img.img-circle(src='/img/20.jpg', alt='')
+            .media-body
+              h3.media-heading Support Director
+              |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+  footer
         | Naga.ly  
         //- a(href='http://www.designbootstrap.com/', target='_blank') by DesignBootstrap
-      //- // FOOTER SECTION END
-    //- /////////////////////////////////////////////////
-  //- // JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME
