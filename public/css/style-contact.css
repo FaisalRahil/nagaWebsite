@@ -111,8 +111,8 @@ font-weight: 700;
 }
 
 .contact {
-	padding-top: 45px;
-	padding-bottom: 120px;
+	/*padding-top: 45px;*/
+	padding-bottom: 50px; 
 }
 
 .contact h2 {

@@ -40,7 +40,7 @@ section {
 }
 
 .set-bk-clr {
-    background-color: #FF2276;
+    background-color: #transparent;
 }
 
 .clr-set {
@@ -59,8 +59,9 @@ section {
 NAVBAR STYLES
 ==============================*/
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+
     color: #fff;
-    font-size: 20px;
+    font-size: 45px;
     text-transform: uppercase;
 }
 .navbar-brand {
@@ -71,6 +72,7 @@ padding:0px;
         height:50px;
     }
 .navbar-default .navbar-toggle {
+
     border-color: #FFF;
 }
 
@@ -83,8 +85,8 @@ padding:0px;
     }
 
 .navbar-default .navbar-nav > li > a {
-    color: #fff;
-    font-weight: 900;
+    color: #FFA319;
+    font-weight: 1000;
 }
 
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -93,27 +95,38 @@ padding:0px;
     }
 
 .navbar-default {
-    /*background-color: #FF2276;*/
+    /*background: rgb(54, 25, 25);*/
     background-color: transparent;
+    /*background-color: #A31919;*/
     border-color: transparent;
 }
 /* ADDED PADDING IN NAVBAR */
 .navbar {
+    /* background: rgba(0,0,0, .6); aladdin */
     padding: 15px;
     -webkit-transition: background .8s ease-out,padding .8s ease-out;
-    -moz-transition: background .8s ease-out,padding .8s ease-out;
+    -moz-transition: background red .8s ease-out,padding .8s ease-out;
     transition: background .8s ease-out,padding .8s ease-out;
 }
 /* CLASS FOR REMOVING PADDING IN NAVBAR*/
 .navbar-pad-original {
+    background: rgba(0,0,0, .6);  
     /*background-color: #FF2276;*/
     padding: 0px;
+    /*Aladdin*/
+    /*background-color: #FF2276;*/
+    
+    /*Aladdin*/
+    /*height: 60px; */
+    /*padding: 0px;
+    background-color: #A31919;*/
+
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #000;
+    color: #FFF;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -126,7 +139,7 @@ padding:0px;
  ============================================================ */
 
 #header {
-    background: url(../img/home.jpg) no-repeat center center;
+    background: url(../img/NaturalBlackDesert.jpg) no-repeat center center;
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
@@ -142,11 +155,11 @@ padding:0px;
 
     #header h1 {
         line-height: 60px;
-        font-size: 45px;
-        font-weight: 900;
-        padding-top: 180px;
+        font-size: 30px;
+        font-weight: 500;
+        padding-top: 250px;
         padding-bottom: 35px;
-        color: #FF2276;
+        color: #FFA319;
     }
 
 
@@ -167,7 +180,9 @@ padding:0px;
     #services i {
         font-size: 80px;
         padding: 30px;
-        color: #FF2276;
+        /*color: #B4D651;*/
+        /*color: #63A663;*/
+        color: #c52d2f;
     }
 
     #services h4 {
@@ -202,14 +217,14 @@ padding:0px;
 }
 
     .clients-carousel .thumbnail {
-        border: 1px solid #FF2276;
+        border: 1px solid #FFC978;
     }
 
     .clients-carousel .carousel-control.left {
         height: 30px;
         width: 25px;
         margin-top: 45px;
-        background: #FF2276;
+        /*background: #FFC978;*/
         left: -15px;
     }
 
@@ -217,7 +232,7 @@ padding:0px;
         height: 30px;
         width: 25px;
         margin-top: 45px;
-        background: #FF2276;
+        /*background: #FFC978;*/
         right: -15px;
     }
 
@@ -235,10 +250,10 @@ padding:0px;
  ============================================================ */
 
 /* FOR CHANGING COLOR OF ACTIVE CATEGORY */
-.caegories a.active {
+/*.caegories a.active {
     background-color: #FF2276;
     border: 2px solid #FF2276;
-}
+}*/
 
 /* FOR TRANSITION BEAUTIFULLY */
 .isotope .isotope-item {
@@ -248,7 +263,7 @@ padding:0px;
 }
 
 #works .work-wrapper {
-    border: 2px solid #FF2276;
+    /*border: 2px solid #FF2276;*/
     padding: 2px;
     margin: 5px 5px 10px 5px;
 }
@@ -295,7 +310,7 @@ padding:0px;
     margin-right: 40px;
     max-height: 150px;
     margin-bottom: 20px;
-    border: 2px solid #FF2276;
+    /*border: 2px solid #FF2276;*/
 }
 
     .media img:hover {
@@ -319,7 +334,7 @@ padding:0px;
         min-height: 300px;
         color: #fff;
         padding-top: 100px;
-        padding-bottom: 100px;
+        /*padding-bottom: 100px;*/ /*Aladdin*/
     }
 /* =============================================================
   FOOTER SECTION STYLES
