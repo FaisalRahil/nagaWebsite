@@ -9,14 +9,15 @@ html
     //- if IE
       meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
     //- BOOTSTRAP CORE CSS
-    link(href='/css/bootstrap.css', rel='stylesheet')
-    
+    link(href='/css/bootstrap.min.css', rel='stylesheet')
     //- IONICON STYLE SHEET FOR BEAUTIFUL ICONS
     link(href='/css/ionicons.css', rel='stylesheet')
     //- STYLE FOR OPENING IMAGE IN POPUP USING FANCYBOX
     link(href='/js/source/jquery.fancybox.css', rel='stylesheet')
     //- CUSTOM CSS
-    link(href='/css/style-old.css', rel='stylesheet')
+    link(href='/css/style.css', rel='stylesheet')
+    link(href="/css/nprogress.css" rel="stylesheet")
+    link(href='/css/animate.min.css', rel='stylesheet')
     //- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries
     //- WARNING: Respond.js doesn't work if you view the page via file://
     //-if lt IE 9
@@ -241,46 +242,6 @@ html
                   h3.media-heading Support Director
                   |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
                   |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-        //- .container
-        //-   .row.text-center(data-scroll-reveal='enter from the bottom after 0.2s')
-        //-     .col-md-6.col-md-offset-3.pad-bottom
-        //-       h2
-        //-         strong AWESOME TEAM
-        //-       |                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
-        //-   .row.pad-bottom(data-scroll-reveal='enter from the bottom after 0.4s')
-        //-     .col-md-6.col-sm-6
-        //-       .media
-        //-         a.media-left(href='#')
-        //-           img.img-circle(src='/img/1.jpg', alt='')
-        //-         .media-body
-        //-           h3.media-heading Technical Director
-        //-           |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-        //-           |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-        //-     .col-md-6.col-sm-6
-        //-       .media
-        //-         a.media-left(href='#')
-        //-           img.img-circle(src='/img/2.jpg', alt='')
-        //-         .media-body
-        //-           h3.media-heading Marketing Director
-        //-           |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-        //-           |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-        //-   .row(data-scroll-reveal='enter from the bottom after 0.6s')
-        //-     .col-md-6.col-sm-6
-        //-       .media
-        //-         a.media-left(href='#')
-        //-           img.img-circle(src='/img/3.jpg', alt='')
-        //-         .media-body
-        //-           h3.media-heading Clients Manager
-        //-           |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-        //-           |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-        //-     .col-md-6.col-sm-6
-        //-       .media
-        //-         a.media-left(href='#')
-        //-           img.img-circle(src='/img/4.jpg', alt='')
-        //-         .media-body
-        //-           h3.media-heading Support Director
-        //-           |                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-        //-           |            3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
       //- TEAM SECTION END
       section#contact
         .overlay
@@ -307,39 +268,31 @@ html
               .confirmation
                 p
                   span.fa.fa-check
-              form.contact-form.support-form
+              form.contact-form.support-form#contactForm(name='contactForm',methode='POST')
                 .col-lg-12
-                  input#name.input-field.form-item.field-name(type='text', required='required', name='contact-name', placeholder='Name')
-                  input#email.input-field.form-item.field-email(type='email', required='required', name='contact-email', placeholder='Email')
-                  input#subject.input-field.form-item.field-subject(type='text', required='required', name='contact-subject', placeholder='Subject')
-                  textarea#message.textarea-field.form-item.field-message(rows='7', name='contact-message', placeholder='Message')
+                  #error
+                  input#contactName.input-field.form-item.field-name(type='text', name='contactName', placeholder='Name')
+                  input#contactEmail.input-field.form-item.field-email(type='email', name='contactEmail', placeholder='Email')
+                  input#contactSubject.input-field.form-item.field-subject(type='text', name='contactSubject', placeholder='Subject')
+                  textarea#contactMessage.textarea-field.form-item.field-message(rows='7', name='contactMessage', placeholder='Message')
                 button.fancy-button.button-line.button-white.large.zoom.subform(type='submit')
                   | Send message
-      //-     .container
-      //-       .row.text-center(data-scroll-reveal='enter from the bottom after 0.2s')
-      //-         .col-md-6.col-md-offset-3.pad-bottom
-      //-           h2
-      //-             strong STAY CONNECTED 
-      //-       .row.text-center(data-scroll-reveal='enter from the bottom after 0.4s')
-      //-         .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
-      //-           h3
-      //-             strong Address : 
-      //-           br
-      //-           h4 102, Melborne City International,
-      //-           h4 United States 
-      //-           h4
-      //-             strong Email : 
-      //-             | info@yourdomain.com
-      //- //- CONTACT SECTION END
-      //- footer
-      //-   | &copy 2015 Naga.ly
-      //-   //- a(href='http://www.designbootstrap.com/', target='_blank') by DesignBootstrap
-  //- FOOTER SECTION END
+      //- CONTACT SECTION END
+      footer
+        | &copy 2015 Naga.ly
+      //- FOOTER SECTION END
   //- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME
   //- CORE JQUERY  SCRIPTS
-  script(src='/js/jquery-1.11.1.js')
+  script(src='/js/jquery-1.11.2.min.js')
   //- BOOTSTRAP SCRIPTS
-  script(src='/js/bootstrap.js')
+  script(src='/js/bootstrap.min.js')
+  //- NProgress
+  script(src='/js/nprogress.js')
+  script.
+    NProgress.start();
+    $(window).load(function() {
+      NProgress.done(); 
+    });
   //- SCROLLING SCRIPTS PLUGIN
   script(src='/js/jquery.easing.min.js')
   //- FANCYBOX PLUGIN
@@ -354,4 +307,6 @@ html
   script(src='/js/jquery.vegas.min.js')
   script(src='/js/jquery.appear.js')
   script(src='/js/custom-contact.js')
-      
+  //- SCRIPTS JQUARY VALIDATION
+  script(src='/js/jquery.validate.min.js')
+  script(src='/js/contactValidation.js')
