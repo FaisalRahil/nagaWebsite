@@ -93,8 +93,8 @@ padding:0px;
     }
 
 .navbar-default {
-    /*background-color: #FF2276;*/
-    background-color: transparent;
+    background-color: #FF2276;
+   /* background-color: transparent;*/
     border-color: transparent;
 }
 /* ADDED PADDING IN NAVBAR */
@@ -106,7 +106,7 @@ padding:0px;
 }
 /* CLASS FOR REMOVING PADDING IN NAVBAR*/
 .navbar-pad-original {
-    /*background-color: #FF2276;*/
+    background-color: #FF2276;
     padding: 0px;
 }
 
