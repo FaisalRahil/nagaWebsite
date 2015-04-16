@@ -6,8 +6,8 @@ router.get('/',function(req, res) {
   res.render('nagaHome',{title: 'Naga'});
 });
 
-router.get('/naga',function(req, res) {
-  res.render('naga',{title: 'naga'});
+router.get('/nagaHomeArabic',function(req, res) {
+  res.render('nagaHomeArabic',{title: 'naga'});
 });
 
 module.exports = router;
