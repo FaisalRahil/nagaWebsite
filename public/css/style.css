@@ -63,15 +63,18 @@ NAVBAR STYLES
 }
 
 .navbar-default .navbar-toggle {
-  border-color: #FFF;
+  /*border-color: #FFF;*/
+  border-color: #FFA319;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #FFF;
+  /*background-color: #FFF;*/
+  background-color: #FFA319;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: rgba(0, 0, 0, 0);
+  /*background-color: rgba(0, 0, 0, 0);*/
+    /*background-color: #FFA319;*/
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -80,13 +83,13 @@ NAVBAR STYLES
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #FFF;
+  /*color: #FFF;*/
   text-decoration: none;
 }
 
 .navbar-default {
   /*background-color: transparent;*/
-  background: rgba(0,0,0, .6);
+  /*background: rgba(0,0,0, .6);*/ /*last change*/
   border-color: transparent;
 }
 
@@ -101,15 +104,15 @@ NAVBAR STYLES
 
 /* CLASS FOR REMOVING PADDING IN NAVBAR*/
 .navbar-pad-original {
-  background: rgba(0,0,0, .6); 
+  /*background: rgba(0,0,0, .6); *//*last change*/
   padding: 0px;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #FFF;
-  background-color: rgba(0, 0, 0, 0);
+  /*color: #FFF;/*last change
+  background-color: rgba(0, 0, 0, 0);*//*last change*/
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;

@@ -10,14 +10,13 @@ html
       meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
     //- BOOTSTRAP CORE CSS
     link(href='/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/css/nprogress.css" rel="stylesheet')
     //- IONICON STYLE SHEET FOR BEAUTIFUL ICONS
     link(href='/css/ionicons.css', rel='stylesheet')
     //- STYLE FOR OPENING IMAGE IN POPUP USING FANCYBOX
     link(href='/js/source/jquery.fancybox.css', rel='stylesheet')
     //- CUSTOM CSS
-    link(href='/css/style.css', rel='stylesheet')
-    link(href="/css/nprogress.css" rel="stylesheet")
-    link(href='/css/animate.min.css', rel='stylesheet')
+    link(href='/css/style.css', rel='stylesheet')    
     //- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries
     //- WARNING: Respond.js doesn't work if you view the page via file://
     //-if lt IE 9
@@ -26,6 +25,7 @@ html
     //- STYLE FOR CONTACT
     link(rel="stylesheet" ,href="/css/fancy-buttons.css")
     link(rel="stylesheet" ,href="/css/style-contact.css")
+    link(href='/css/animate.min.css', rel='stylesheet')
   body(data-spy='scroll', data-target='.navbar-fixed-top')
     block content
       .navbar.navbar-default.navbar-fixed-top.scroll-me
@@ -286,6 +286,13 @@ html
   script(src='/js/jquery-1.11.2.min.js')
   //- BOOTSTRAP SCRIPTS
   script(src='/js/bootstrap.min.js')
+  script(src='/js/bootstrap-notify.min.js')
+  script(src='')
+  script.
+    $.notify({
+      title: "Welcome:",
+      message: "This plugin has been provided to you by Robert McIntosh aka mouse0270"
+    });
   //- NProgress
   script(src='/js/nprogress.js')
   script.
