@@ -21,6 +21,7 @@ $(document).ready(function() {
       },
       contactEmailArabic:{
         required: "من فضلك ادخل بريدك الالكتروني !",
+        email: "من فضلك ادخل بريدك الالكتروني صحيح !",
       },
       contactSubjectArabic:{
         required: "من فضلك ادخل اسم الموضوع !",
