@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+     <link rel="shortcut icon" type="image/x-icon" href="img/nagaLogo.png" />`
+    <title>Naga for IT solutions</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="">
@@ -16,6 +17,68 @@
     <link href="css/animate.min.css" rel="stylesheet">
   </head>
   <body data-spy="scroll" data-target=".navbar-fixed-top">
+    <?php      
+      require 'PHPMailerAutoload.php';
+      $mail = new PHPMailer;
+      if(@$_POST["submit"]) {
+        $name=$_POST["name"];
+        $email=$_POST["email"];
+        $subject=$_POST["subject"];
+        $message=$_POST["message"];
+        if(!$_POST["name"]) {
+            @$error.="<br>Please enter your name";
+        }
+         if(!$_POST["email"]) {
+            @$error.="<br>Please enter your email";
+        }
+        if ($_POST["email"]!="" AND !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) { 
+            @$error.="<br>Please enter a valid email adddress";
+        }
+         if(!$_POST["subject"]) {
+            @$error.="<br>Please enter your subject";
+        }
+         if(!$_POST["message"]) {
+            @$error.="<br>Please enter your message";
+        }
+        if (@$error) {
+        @$result=
+        '<div class="alert alert-danger alert-dismissable" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>There were errors in your form:'.$error.'</div>';
+        $saveName = $_POST['name'];
+        $saveEmail = $_POST['email'];
+        $saveSubject = $_POST['subject'];
+        $saveMessage = $_POST['message'];
+        }
+        else {
+          $mail = new PHPMailer;                            // Enable verbose debug output
+          $mail->CharSet = 'UTF-8';
+          $mail->Encoding = 'base64';
+          $mail->isSMTP();                                      // Set mailer to use SMTP
+          $mail->Host = 'naga.ly';  // Specify main and backup SMTP servers
+          $mail->SMTPAuth = true;                               // Enable SMTP authentication
+          $mail->Username = 'noreply@naga.ly';                 // SMTP username
+          $mail->Password = 'NgD3m^K2d&eM';                           // SMTP password
+          $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+          $mail->Port = 25;                                    // TCP port to connect to
+          $mail->setFrom($email, $name);
+          $mail->addAddress("info@naga.ly", "info");     // Add a recipient              // Name is optional
+          $mail->addReplyTo($email, $name);
+          $mail->isHTML(true);                                  // Set email format to HTML
+          $mail->Subject = $subject;
+          $mail->Body    = '<b>'.$message.'</b>';
+          if($mail->send()) {
+            $result=
+              '<div class="alert alert-success alert-dismissable" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Form submitted!</div>';
+          }
+          else {
+            $result=
+              '<div class="alert alert-danger alert-dismissable" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Sorry, there was an error sending your message.  Please try again later.</div>';
+          }
+        }
+      }
+    ?>
     <div class="navbar navbar-default navbar-fixed-top scroll-me">
       <div class="container">
         <div class="navbar-header">
@@ -25,8 +88,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#header">HOME</a></li>
             <li><a href="#works">WORK</a></li>
-            <li><a href="#team">TEAM</a></li>
             <li><a href="#aboutUs">ABOUT US</a></li>
+            <li><a href="#team">TEAM</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
@@ -37,7 +100,7 @@
         <div class="container">
           <div class="row scroll-me">
             <div class="col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 text-center">
-              <h1 data-scroll-reveal="enter from the bottom after 0.2s">NAGA SOFTWARE DEVELOPMENT COMPANY AND CREATE BETTER SYSTEMS AND SITES
+              <h1 data-scroll-reveal="enter from the bottom after 0.2s">NAGA FOR IT SOLUTIONS 
               </h1>
             </div>
           </div>
@@ -124,7 +187,7 @@ Programming and the development of interactive software and professional applica
           <div class="col-md-6 col-sm-6">
             <div class="media"><a href="#" class="media-left"><img src="img/11.jpg" alt="" class="img-circle"></a>
               <div class="media-body">
-                <h3 class="media-heading"> Abdullah Elamir </h3>  abdullah is the naga founder, back end developer . He has been awarded a Bachelor's degree in computer science from the University of Tripoli
+                <h3 class="media-heading"> Abdullah Elamir </h3>  Abdullah is the co-founder & a back-end developer,he has experience in many languages such as Java ,python . He has been awarded a Bachelor's degree in computer science from the University of Tripoli
               </div>
             </div>
           </div>
@@ -140,14 +203,14 @@ Programming and the development of interactive software and professional applica
           <div class="col-md-6 col-sm-6">
             <div class="media"><a href="#" class="media-left"><img src="img/13.jpg" alt="" class="img-circle"></a>
               <div class="media-body">
-                <h3 class="media-heading">Faisal Rahil</h3>       Faisal is the naga founder,front end developer. He has been awarded a Bachelor's degree in computer science from the University of Tripoli                 
+                <h3 class="media-heading">Faisal Rahil</h3>       Faisal is the co-founder & a front-end developer. He has been awarded a Bachelor's degree in computer science from the University of Tripoli                 
               </div>
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
             <div class="media"><a href="#" class="media-left"><img src="img/14.jpg" alt="" class="img-circle"></a>
               <div class="media-body">
-                <h3 class="media-heading">AbdulQudos aboras</h3>      AbdulQudos is the naga founder, front end developer . He has been awarded a Bachelor's degree in computer science from the University of Tripoli                        
+                <h3 class="media-heading">AbdulQudos aboras</h3>      AbdulQudos is the co-founder & a front-end developer . He has been awarded a Bachelor's degree in computer science from the University of Tripoli                        
               </div>
             </div>
           </div>
@@ -157,14 +220,16 @@ Programming and the development of interactive software and professional applica
             <div class="media"><a href="#" class="media-left"><img src="img/17.jpg" alt="" class="img-circle"></a>
               <div class="media-body">
                 <h3 class="media-heading">Farouck Shouba</h3>                           
-                  farouk is the naga founder, front end developer . He has been awarded a Bachelor's degree in computer science from the University of Tripoli
+                      Farouk Shouba is the co-founder , front-end developer and systems analyst . He has been awarded a Bachelor's degree in computer science from the University of Tripoli
+
+
               </div>
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
             <div class="media"><a href="#" class="media-left"><img src="img/18.jpg" alt="" class="img-circle"></a>
               <div class="media-body">
-                <h3 class="media-heading">Aladdin Suni</h3>   Aladdin is the naga founder, front end developer . He has been awarded a Bachelor's degree in computer science from the University of Tripoli                          
+                <h3 class="media-heading">Aladdin Suni</h3>   Aladdin is the co-founder & a front-end developer . He has been awarded a Bachelor's degree in computer science from the University of Tripoli                          
               </div>
             </div>
           </div>
@@ -173,14 +238,14 @@ Programming and the development of interactive software and professional applica
           <div class="col-md-6 col-sm-6">
             <div class="media"><a href="#" class="media-left"><img src="img/44.jpg" alt="" class="img-circle"></a>
               <div class="media-body">
-                <h3 class="media-heading">Mohammed Al Gemati</h3>   Mohammed is the naga founder, back end developer . He has been awarded a Bachelor's degree in computer science from the University of Tripoli                           
+                <h3 class="media-heading">Mohammed Al Gemati</h3>   Mohammed is the co-founder & a back-end developer . He has been awarded a Bachelor's degree in computer science from the University of Tripoli                           
               </div>
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
             <div class="media"><a href="#" class="media-left"><img src="img/20.jpg" alt="" class="img-circle"></a>
               <div class="media-body">
-                <h3 class="media-heading">abdulladem frag</h3>    abdo is the naga founder, back end developer . He has been awarded a Bachelor's degree in computer science from the University of Tripoli                                 
+                <h3 class="media-heading">abdulladem frag</h3>    Abdo is the co-founder & a back-end developer . He has been awarded a Bachelor's degree in computer science from the University of Tripoli                                 
               </div>
             </div>
           </div>
@@ -198,25 +263,29 @@ Programming and the development of interactive software and professional applica
                 <p></p>0911255848
               </h4>
               <h4 id="h4"><strong>Email : </strong>info@naga.ly</h4>
+               <h4 id="h4"><strong>Mailbox : </strong>5107  General Mailbox Tripoli</h4>
             </h2>
             <div class="col-xs-12"><br><br></div>
           </div>
           <div class="col-md-7 col-md-offset-2">
             <div class="col-md-10 col-md-offset-1 center section-title">
               <h2>Leave a message</h2>
+              <?php 
+              @header("location: index.php#contact");
+              echo @$result; ?>
             </div>
             <div class="confirmation">
               <p><span class="fa fa-check"></span></p>
             </div>
-            <form id="contactForm" name="contactForm" methode="POST" class="contact-form support-form">
+            <form method="POST" class="contact-form support-form">
               <div class="col-lg-12">
                 <div id="error"></div>
-                <input id="contactName" type="text" name="contactName" placeholder="Name" class="input-field form-item field-name">
-                <input id="contactEmail" type="email" name="contactEmail" placeholder="Email" class="input-field form-item field-email">
-                <input id="contactSubject" type="text" name="contactSubject" placeholder="Subject" class="input-field form-item field-subject">
-                <textarea id="contactMessage" rows="7" name="contactMessage" placeholder="Message" class="textarea-field form-item field-message"></textarea>
+                <input id="contactName" type="text" name="name" placeholder="Name" class="input-field form-item field-name">
+                <input id="contactEmail" type="email" name="email" placeholder="Email" class="input-field form-item field-email">
+                <input id="contactSubject" type="text" name="subject" placeholder="Subject" class="input-field form-item field-subject">
+                <textarea id="contactMessage" rows="7" name="message" placeholder="Message" class="textarea-field form-item field-message"></textarea>
               </div>
-              <button type="submit" class="fancy-button button-line button-white large zoom subform">Send message</button>
+                <input type="submit" name="submit" value="Send message" class="fancy-button button-line button-white large zoom subform">
             </form>
           </div>
         </div>
@@ -243,7 +312,7 @@ Programming and the development of interactive software and professional applica
   <script src="js/jquery.vegas.min.js"></script>
   <script src="js/jquery.appear.js"></script>
   <script src="js/custom-contact.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
+  <!--<script src="js/jquery.validate.min.js"></script>
   <script src="js/contactValidation.js"></script>
-  <script src="js/contactValidationArabic.js"></script>
+  <script src="js/contactValidationArabic.js"></script>-->
 </html>
